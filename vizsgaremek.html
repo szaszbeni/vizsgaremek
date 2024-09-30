@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vizsgastyle.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="regir.php" method="post" target="kisablak" >
+        <h1>Welcome</h1>
+        <label for="fname">User name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="fname">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="fname">Password:</label>
+        <input type="password" id="password" name="password" ><br><br>
+        <input type="submit" value="Registration"><br><br>
+        <p id="result"></p>
+        <iframe name="kisablak"></iframe>
+    </form>
+    <script>
+        function Udvozles() {
+            let fnev = document.getElementById("fname").value;
+            let email = document.getElementById("email").value;
+            let jelszo = document.getElementById("password").value;            
+            if (fnev != "" && snev != "" && email != "" && jelszo != "" )
+            {
+                document.getElementById("result").innerHTML = "Welcome" + nev + "!";
+                document.getElementById("result").style.color = "Black";
+            }
+            else
+            {
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result").innerHTML = "Valamelyik mező nincs kitöltve!";
+            }
+            
+        }
+        document.querySelector("input[type='submit']").onclick = Udvozles;
+        
+
+    </script>
+    
+</body>
+</html>
