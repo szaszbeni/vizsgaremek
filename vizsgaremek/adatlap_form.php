@@ -63,7 +63,7 @@ nav ul li a {
     $user = mysqli_fetch_array(mysqli_query( $adb, "SELECT * FROM user WHERE uid='$_SESSION[uid]'"));
 ?>
 
-<form action='adatlap_ir.php' method='post' target='kisablak' style='margin-left:  35%;'>
+<form action='adatlap_ir.php' method='post' target='kisablak' class='reglog' enctype='multipart' style='margin-left:  35%;'>
     <h2>Adatlapom</h2>
     <input type='hidden' name='uid' value='<?=$user['uid'];?>'><br>
     <label for='uname'>Nickname:</label>
@@ -71,6 +71,7 @@ nav ul li a {
     <label for='uemail'>Email:</label>
     <input type='text' id='uemail' name='uemail' value='<?=$user['uemail'];?>' maxlength=250><br>
     <input type="button" value="Jelszavam modositasa" onclick="location.href='jelszo_form.php'"><br>
+    <span>Uj profilkép</span><input type="file" name='uproffkep'><br>
     <input type='submit' value='Modositas'>
 </form>
 </body>

@@ -2,14 +2,33 @@
     session_start();
     print_r( $_POST ) ;
 
+    print "<hr>";
+    print_r( $_FILES);
+
     include( "kapcsolat.php" ) ;
+
+    $kepnev  = $_SESSION['uid'] . "_" . date("ymdHis") . "_" . randomstring(10) ; 
+    $kepadat = $_FILES['uproffkep'];
+    if ($kepadat['type']=="images/jpeg") $kitterj = ".jpg"; else
+    if ($kepadat['type']=="images/png") $kitterj = ".png"; else
+    die( "<script> alert('A kep csak jpeg vagy png lehet.') </script>");
+
+    $kepnev .= $kitterj ;
+
+    move_uploaded_file( $kepadat['tmp_name'], "./profilkepek/" . $kepnev );
+
+    $eredetikepnev = $kepadat['name'];
+
+    print "<br>". $kepnev;
 
     if ($_POST['uname']=="") die("<script> alert('Nick name')</script>");
 
     mysqli_query( $adb, "
     UPDATE user
     SET uname =  '$_POST[uname]' ,
-        uemail = '$_POST[uemail]' 
+        uemail = '$_POST[uemail]',
+        uproffkepnev = '$kepnev',
+        uproffkeperedetinev = '$eredetinev'
     WHERE uid = '$_POST[uid]'
     ");
 

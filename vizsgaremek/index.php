@@ -26,7 +26,16 @@
     print '<input type="button" value="Belépés" onclick="location.href=\'./?p=login\'">';
     }
     else{
+        $user = mysqli_fetch_array(mysqli_query($adb, "
+            SELECT * FROM user 
+            WHERE uid='$_SESSION[uid]'
+        "));
+
+        if ($user['uproffkepnev'] != "") $profilkep = "./profilkepek/$user[uproffkepnev]";
+        else $profilkep = "alapprofilkep.jpg";
+
     print "
+        <img src='./profilkepek/$user[uproffkepnev]' style='height:30px; border-radius:50%;'>
         <a href='./?p=adatlapom'> $_SESSION[uname] </a>
         <input type='button' value='Kilépés' onclick='kisablak.location.href=\'logout.php\''>
     ";
