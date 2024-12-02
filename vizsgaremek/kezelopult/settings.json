@@ -1,8 +1,0 @@
-{
-    "site_title": "Chat Weboldal",
-    "site_description": "Ez a chat weboldal le\u00edr\u00e1sa.",
-    "two_factor_auth": "off",
-    "password_policy": "medium",
-    "enable_moderation": "on",
-    "auto_ban": "off"
-}
