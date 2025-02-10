@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Jan 20. 14:37
+-- Létrehozás ideje: 2025. Feb 10. 13:44
 -- Kiszolgáló verziója: 10.4.6-MariaDB
 -- PHP verzió: 7.3.8
 
@@ -178,7 +178,20 @@ INSERT INTO `login` (`lid`, `ldate`, `lip`, `lsession`, `luid`) VALUES
 (89, '0000-00-00 00:00:00', '::1', 'b3i7rvuf', 0),
 (90, '0000-00-00 00:00:00', '::1', 'b3i7rvuf', 38),
 (91, '0000-00-00 00:00:00', '::1', 'b3i7rvuf', 53),
-(92, '0000-00-00 00:00:00', '::1', 'gs20q8fc', 38);
+(92, '0000-00-00 00:00:00', '::1', 'gs20q8fc', 38),
+(93, '0000-00-00 00:00:00', '::1', 'nltk7kqv', 38),
+(94, '0000-00-00 00:00:00', '::1', 'nltk7kqv', 0),
+(95, '0000-00-00 00:00:00', '::1', 'nltk7kqv', 38),
+(96, '0000-00-00 00:00:00', '::1', 'sjpk4nlb', 38),
+(97, '0000-00-00 00:00:00', '::1', 'sjpk4nlb', 38),
+(98, '0000-00-00 00:00:00', '::1', 't80qiper', 46),
+(99, '0000-00-00 00:00:00', '::1', 't80qiper', 54),
+(100, '0000-00-00 00:00:00', '::1', '9s6879nd', 38),
+(101, '0000-00-00 00:00:00', '::1', '9s6879nd', 38),
+(102, '0000-00-00 00:00:00', '::1', '9s6879nd', 38),
+(103, '0000-00-00 00:00:00', '::1', '9s6879nd', 38),
+(104, '0000-00-00 00:00:00', '::1', '9s6879nd', 38),
+(105, '0000-00-00 00:00:00', '::1', '9s6879nd', 38);
 
 -- --------------------------------------------------------
 
@@ -193,6 +206,23 @@ CREATE TABLE `messages` (
   `mDate` timestamp(6) NULL DEFAULT NULL,
   `mIP` int(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `messages`
+--
+
+INSERT INTO `messages` (`mid`, `mEmail`, `mUzenet`, `mDate`, `mIP`) VALUES
+(1, 'asd@gmail.com', 'asdasd', '2025-01-22 11:46:00.000000', 0),
+(2, 'asd@gmail.com', 'asdasd', '2025-01-22 11:47:18.000000', 0),
+(3, 'asd@gmail.com', 'asdasd', '2025-01-22 11:58:31.000000', 0),
+(4, 'asd@gmail.com', 'asdasd', '2025-01-22 12:02:48.000000', 0),
+(5, 'asd@gmail.com', 'asdasd', '2025-01-22 12:03:51.000000', 0),
+(6, 'asd@gmail.com', 'asdasd', '2025-01-22 12:04:51.000000', 0),
+(7, 'asd@gmail.com', 'asdasd', '2025-01-22 12:06:59.000000', 0),
+(8, 'asd@gmail.com', 'asdasd', '2025-01-22 12:13:48.000000', 0),
+(9, 'asdasd@gmail.com', 'asdasd', '2025-01-22 12:17:45.000000', 0),
+(10, 'asdasd@gmail.com', 'asdasd', '2025-01-22 12:30:39.000000', 0),
+(11, 'asdasd@gmail.com', 'asdasd', '2025-01-22 12:33:41.000000', 0);
 
 -- --------------------------------------------------------
 
@@ -2193,7 +2223,229 @@ INSERT INTO `note` (`nid`, `ndate`, `nip`, `nsession`, `nuid`, `nurl`) VALUES
 (1975, '2025-01-20', '::1', 'gs20q8fc', 0, '/szaszbeni/vizsgaremek/?p=contact'),
 (1976, '2025-01-20', '::1', 'gs20q8fc', 0, '/szaszbeni/vizsgaremek/?p=contact'),
 (1977, '2025-01-20', '::1', 'gs20q8fc', 0, '/szaszbeni/vizsgaremek/?p=contact'),
-(1978, '2025-01-20', '::1', 'gs20q8fc', 0, '/szaszbeni/vizsgaremek/?p=contact');
+(1978, '2025-01-20', '::1', 'gs20q8fc', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(1979, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/index.php'),
+(1980, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/'),
+(1981, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(1982, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/'),
+(1983, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(1984, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/index.php'),
+(1985, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(1986, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p='),
+(1987, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(1988, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p=jelszo'),
+(1989, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(1990, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p=contact'),
+(1991, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(1992, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p=contact'),
+(1993, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/'),
+(1994, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(1995, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(1996, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/'),
+(1997, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(1998, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/'),
+(1999, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(2000, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p='),
+(2001, '2025-01-22', '::1', 'nltk7kqv', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(2002, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p='),
+(2003, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p='),
+(2004, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p='),
+(2005, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p='),
+(2006, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2007, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p='),
+(2008, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p=login'),
+(2009, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/?p='),
+(2010, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2011, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2012, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2013, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2014, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2015, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2016, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2017, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2018, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2019, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2020, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2021, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2022, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2023, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2024, '2025-01-22', '::1', 'nltk7kqv', 38, '/szaszbeni/vizsgaremek/'),
+(2025, '2025-01-23', '::1', 'sjpk4nlb', 0, '/szaszbeni/vizsgaremek/index.php'),
+(2026, '2025-01-23', '::1', 'sjpk4nlb', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(2027, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2028, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2029, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2030, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2031, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2032, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2033, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2034, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2035, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2036, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p=login'),
+(2037, '2025-01-23', '::1', 'sjpk4nlb', 0, '/szaszbeni/vizsgaremek/'),
+(2038, '2025-01-23', '::1', 'sjpk4nlb', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(2039, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/?p='),
+(2040, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2041, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2042, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2043, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2044, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2045, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2046, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2047, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2048, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2049, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2050, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2051, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2052, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2053, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2054, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2055, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2056, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2057, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2058, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2059, '2025-01-23', '::1', 'sjpk4nlb', 38, '/szaszbeni/vizsgaremek/'),
+(2060, '2025-01-27', '::1', 't80qiper', 0, '/szaszbeni/vizsgaremek/index.php'),
+(2061, '2025-01-27', '::1', 't80qiper', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(2062, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2063, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2064, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2065, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2066, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2067, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2068, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2069, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2070, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2071, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2072, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2073, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2074, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p=');
+INSERT INTO `note` (`nid`, `ndate`, `nip`, `nsession`, `nuid`, `nurl`) VALUES
+(2075, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2076, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2077, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2078, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2079, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2080, '2025-01-27', '::1', 't80qiper', 46, '/szaszbeni/vizsgaremek/?p='),
+(2081, '2025-01-27', '::1', 't80qiper', 0, '/szaszbeni/vizsgaremek/'),
+(2082, '2025-01-27', '::1', 't80qiper', 0, '/szaszbeni/vizsgaremek/?p=regisztracio'),
+(2083, '2025-01-27', '::1', 't80qiper', 54, '/szaszbeni/vizsgaremek/?p='),
+(2084, '2025-01-27', '::1', 't80qiper', 54, '/szaszbeni/vizsgaremek/?p='),
+(2085, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2086, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2087, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2088, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2089, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2090, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2091, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2092, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2093, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2094, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2095, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2096, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2097, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2098, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2099, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2100, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2101, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2102, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2103, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2104, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2105, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2106, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2107, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2108, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2109, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2110, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2111, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2112, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2113, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2114, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2115, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2116, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2117, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2118, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2119, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2120, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2121, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2122, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/'),
+(2123, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2124, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2125, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2126, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2127, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2128, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2129, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2130, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2131, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2132, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2133, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2134, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2135, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2136, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2137, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2138, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2139, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2140, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2141, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2142, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2143, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2144, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2145, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2146, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2147, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2148, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2149, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2150, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2151, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2152, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2153, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2154, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2155, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2156, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2157, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2158, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2159, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2160, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2161, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2162, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2163, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2164, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2165, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/?p='),
+(2166, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(2167, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2168, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2169, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2170, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2171, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(2172, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2173, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2174, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2175, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(2176, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2177, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=contact'),
+(2178, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2179, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/?p=contact'),
+(2180, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/'),
+(2181, '2025-01-30', '::1', '9s6879nd', 0, '/szaszbeni/vizsgaremek/?p=login'),
+(2182, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2183, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2184, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2185, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2186, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2187, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2188, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2189, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2190, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2191, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2192, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2193, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2194, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2195, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2196, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2197, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p='),
+(2198, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=adatlapom'),
+(2199, '2025-01-30', '::1', '9s6879nd', 38, '/szaszbeni/vizsgaremek/?p=');
 
 -- --------------------------------------------------------
 
@@ -2246,7 +2498,8 @@ INSERT INTO `user` (`uid`, `uname`, `uemail`, `upass`, `utime`, `uproffkepnev`, 
 (50, 'fasz', 'fasz@gmail.com', '3d17d9a1e6416bfe415beee77157fbab', '2024-12-12 10:04:08', '', '', '', '', '', '', '0000-00-00'),
 (51, 'Ferenc', 'fasza@gmail.com', 'a8f5f167f44f4964e6c998dee827110c', '2024-12-16 12:04:08', '', '', '', '', '', '', '0000-00-00'),
 (52, 'asdasdasd', 'asdasd@gmail.com', '$2y$10$QfwwTTw0HFj634y0fxkt.u7cisOF9uzUD/f3Zap9C7KbXerOhGcQq', '2025-01-13 12:21:28', '', '', '', '', '', '', '0000-00-00'),
-(53, 'zola', 'z@gmail.com', '202cb962ac59075b964b07152d234b70', '2025-01-16 10:59:32', '', '', '', '', '', '', '0000-00-00');
+(53, 'zola', 'z@gmail.com', '202cb962ac59075b964b07152d234b70', '2025-01-16 10:59:32', '', '', '', '', '', '', '0000-00-00'),
+(54, 'kaka', 'k@gmail.com', 'c20ad4d76fe97759aa27a0c99bff6710', '2025-01-27 13:04:15', '', '', '', '', '', '', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -2263,6 +2516,44 @@ CREATE TABLE `users` (
   `uupdated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `umessage` varchar(500) COLLATE utf8_hungarian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `uzenetek`
+--
+
+CREATE TABLE `uzenetek` (
+  `uID` int(200) NOT NULL,
+  `uDate` datetime(6) NOT NULL,
+  `uEmail` varchar(200) COLLATE utf8_hungarian_ci NOT NULL,
+  `uUzenet` varchar(500) COLLATE utf8_hungarian_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `uzenetek`
+--
+
+INSERT INTO `uzenetek` (`uID`, `uDate`, `uEmail`, `uUzenet`) VALUES
+(1, '2025-01-27 13:03:17.000000', 'users.uemail', 'asdsaasd'),
+(2, '2025-01-27 13:04:37.000000', 'users.uemail', 'anyad'),
+(3, '2025-01-27 13:04:42.000000', 'users.uemail', 'anyad'),
+(4, '2025-01-30 13:51:16.000000', 'users.uemail', 'asdasdasdasdasdasdaasdasdasdasdasd'),
+(5, '2025-01-30 13:51:26.000000', 'users.uemail', 'asdasdasdasdasdasdaasdasdasdasdasd'),
+(6, '2025-01-30 13:51:29.000000', 'users.uemail', 'asdasdasdasdasdasdaasdasdasdasdasd'),
+(7, '2025-01-30 13:52:20.000000', 'users.uemail', 'asdasd'),
+(8, '2025-01-30 13:52:30.000000', 'users.uemail', 'asssssssssssssssssssssssssssssa'),
+(9, '2025-01-30 14:06:14.000000', 'users.uemail', 'asdasdasdasd'),
+(10, '2025-01-30 14:07:29.000000', 'users.uemail', 'asdasdasdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
+(11, '2025-01-30 14:08:44.000000', 'FelhasznÃ¡lÃ³', 'ergergybdertbsetrbgsrtgbrstznsdfthbfhbghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh'),
+(12, '2025-01-30 14:09:05.000000', 'FelhasznÃ¡lÃ³', 'szia'),
+(13, '2025-01-30 14:09:11.000000', 'FelhasznÃ¡lÃ³', 'mizu?'),
+(14, '2025-01-30 14:09:15.000000', 'FelhasznÃ¡lÃ³', 'fasz\r\n'),
+(15, '2025-01-30 14:10:00.000000', 'FelhasznÃ¡lÃ³', 'nagonjo itt van hazam \r\nbejosz tessek'),
+(16, '2025-01-30 14:14:26.000000', 'FelhasznÃ¡lÃ³', 'aeVvavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv'),
+(17, '2025-01-30 14:14:46.000000', 'FelhasznÃ¡lÃ³', 'vvvvvvvvv\r\nv\r\nv\r\nv\r\nv\r\nv\r\nv\r\n'),
+(18, '2025-01-30 14:15:44.000000', 'FelhasznÃ¡lÃ³', 'aWDfafzaz9pfzfzfzzffz'),
+(19, '2025-01-30 14:16:44.000000', 'FelhasznÃ¡lÃ³', 'asdasdasdasdasd');
 
 -- --------------------------------------------------------
 
@@ -2339,6 +2630,12 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `uemail` (`uemail`);
 
 --
+-- A tábla indexei `uzenetek`
+--
+ALTER TABLE `uzenetek`
+  ADD PRIMARY KEY (`uID`);
+
+--
 -- A tábla indexei `uzenofal`
 --
 ALTER TABLE `uzenofal`
@@ -2376,31 +2673,37 @@ ALTER TABLE `groups`
 -- AUTO_INCREMENT a táblához `login`
 --
 ALTER TABLE `login`
-  MODIFY `lid` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `lid` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT a táblához `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT a táblához `note`
 --
 ALTER TABLE `note`
-  MODIFY `nid` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1979;
+  MODIFY `nid` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2200;
 
 --
 -- AUTO_INCREMENT a táblához `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `uid` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT a táblához `users`
 --
 ALTER TABLE `users`
   MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT a táblához `uzenetek`
+--
+ALTER TABLE `uzenetek`
+  MODIFY `uID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT a táblához `uzenofal`
