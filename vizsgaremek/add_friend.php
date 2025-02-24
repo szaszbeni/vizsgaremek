@@ -1,14 +1,18 @@
 <?php
-require ('kapcsolat.php'); 
 session_start();
+$adb = mysqli_connect("localhost", "root", "", "szb_registration");
 
-    $user_id = $_POST['uid'];
-    mysqli_query($sql ,  "
+if ($adb) {
+    
+    //$user_id = $_POST['uid'];
+    $email = $_SESSION["uname"];
+    $sql = "
         INSERT INTO friends (`fid`, `fmyid`) 
-        VALUES        (null , '$user_id')
-    ");
+        VALUES        (null , '$email')
+    ";
+}
         
-    mysqli_close( $sql );
+    mysqli_query($adb, $sql);
         //if (mysqli_query($sql)) {
         //    echo "Friend added successfully.";
         //} else {
