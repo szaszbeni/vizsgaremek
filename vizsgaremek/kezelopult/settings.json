@@ -1,8 +1,0 @@
-{
-    "site_title": "Chat Weboldal\u00edearbgaenht",
-    "site_description": "Ez a chat weboldal lERGBRWENRe\u00edr\u00e1sa.",
-    "two_factor_auth": "on",
-    "password_policy": "medium",
-    "enable_moderation": "on",
-    "auto_ban": "on"
-}
