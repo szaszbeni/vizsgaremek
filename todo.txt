@@ -1,0 +1,17 @@
+- 48-72 oras idozito hogy addig latjak az uzenetet
+- kozepre igazitani a kezdolapon a naptarat
+- kep/gif feltoltes es mentes
+- jelszo helyreallitas es valtoztatas
+- a masodik resz a belsolapon kinagyitani 
+- responzivitas
+- add friend ertesytés kuldése annak akit beaddoltunk
+
+pptbe:
+	our mission:
+Security and Data Protection: We are fully compliant with European data protection regulations, and users can request the deletion or retrieval of their data at any time.
+
+Secure Communication: All communication on the site takes place over a secure (SSL/TLS) connection, ensuring that no data can be intercepted during transmission.
+
+Secure File Sharing: All shared files are stored in an encrypted format and can only be accessed by authorized users—either through dedicated links or permission management.
+
+Future Plans: Developing a modern messaging platform doesn’t end with the first working version. Its real value lies in continuous development, listening to user feedback, and adapting to technological changes.
