@@ -5,6 +5,8 @@
 - a masodik resz a belsolapon kinagyitani 
 - responzivitas
 - add friend ertesytés kuldése annak akit beaddoltunk
+- ppthez hozzairni flag, algoritmus, chatrol, stb...
+- 1 dia adatbazi screenshoot tablakrol 
 
 pptbe:
 	our mission:
