@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Kezdolap</title>
-                     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
@@ -16,6 +15,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
     </head>
     
     <body>
@@ -39,11 +39,11 @@
             </div>
 
             <section class="hero-section d-flex justify-content-center align-items-center" id="section_1" style="text-align: center;">
-                <div class="container">
+                <div class="container" >
                     <div class="row">
 
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <h1 class="text-white mt-2 mb-4 pb-2">
+                        <div class="col-lg-6 col-12 mx-auto" >
+                            <h1 class="text-white mt-2 mb-4 pb-2 ">
                                 Stay tuned!
                             </h1>
                             <?php
@@ -55,22 +55,22 @@
                                     $minutes = $currentDateTime->format("i");
                                     $seconds = $currentDateTime->format("s");
                                 ?>
-                            <ul class="countdown d-flex flex-wrap ">
-                                <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                            <ul class="countdown d-flex flex-wrap justify-content-center">
+                                <li class="countdown-item">
                                     <h2 class="countdown-title"><?php echo $year; ?></h2>
                                     <span class="countdown-text">Year</span>
                                 </li>
-                                <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                <li class="countdown-item">
                                     <h2 class="countdown-title"><?php echo $month; ?></h2>
                                     <span class="countdown-text">Month</span>
                                 </li>
-                                <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                                <li class="countdown-item">
                                     <h2 class="countdown-title"><?php echo $day; ?></h2>
                                     <span class="countdown-text">Day</span>
                                 </li>
-  
                             </ul>
-                            <ul class="countdown d-flex flex-wrap">
+
+                            <ul class="countdown d-flex flex-wrap justify-content-center">
                                 <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="countdown-title"><?php echo $hours; ?></h2>
                                     <span class="countdown-text">Hours</span>
@@ -82,8 +82,9 @@
                                 <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="countdown-title"><?php echo $seconds; ?></h2>
                                     <span class="countdown-text">Seconds</span>
-                                </li>     
+                                </li>
                             </ul>
+
 
                         </div>
                     </div>
