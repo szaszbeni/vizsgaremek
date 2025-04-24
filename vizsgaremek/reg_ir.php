@@ -1,6 +1,6 @@
 <?php
     include( "kapcsolat.php" ) ;
-    print_r( $_POST ) ;
+    //print_r( $_POST ) ;
 
     
     if ( $_POST['uname']=="") {
@@ -37,6 +37,7 @@
     mysqli_stmt_execute($stmt);
     
     
-    header("Location: ./?p=login");
+    header("Location: login_form.php");
     mysqli_close( $adb );
+    exit();
 ?>
