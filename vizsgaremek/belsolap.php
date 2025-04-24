@@ -74,39 +74,49 @@ $email = $_SESSION["uname"];
       overflow-y: auto;
       margin-bottom: 15px;
     }
+    .chat-header {
+      align-items: center;
+      background-color: #2f3136;
+    }
+    
     #input-box {
       width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 16px;
-      resize: none;
-    }
-    #send-btn {
-      background-color: #4e73df;
-      color: white;
+      padding: 12px;
       border: none;
-      padding: 15px;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 50%;
-      margin-top: 10px;
-      display: block;
-      width: 60px;
-      height: 60px;
-      margin-left: auto;
-      margin-right: auto;
-      transition: background-color 0.3s;
+      border-radius: 8px;
+      font-size: 15px;
+      background-color: #40444b;
+      color: #dcddde;
+      margin-bottom: 10px;
     }
-    #send-btn:hover {
-        background-color: #4752c4;
-    }
-    #leir {
-        padding: 10px;
-        background-color: #2f3136;
-        border: 1px solid #202225;
-        border-radius: 5px;
-    }
+    
+  #input-box::placeholder {
+    color: #b9bbbe;
+  }
+
+  #send-btn {
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    transition: background-color 0.2s;
+  }
+
+  #send-btn:hover {
+    background-color: #4752c4;
+  }
+  #leir {
+    padding: 10px;
+    background-color: #2f3136;
+    border: 1px solid #202225;
+    border-radius: 8px;
+  }
     h4 {
         color: #ffffff;
     }
@@ -136,7 +146,7 @@ $email = $_SESSION["uname"];
           </td>
           <td id="masodik">
             <form method="POST" action="belsolap.php" target="kisablak">
-              <div class="col-md-6">
+              <div class="chat-header">
                 <div id="chat-box">
                   <?php
                   if (isset($_GET["fname"])) {
@@ -153,7 +163,7 @@ $email = $_SESSION["uname"];
                 </div>
                 <textarea id="input-box" rows="8" name="uzi" placeholder="Írj valamit..."></textarea>
                 <input type="file" name="fajl">
-                <button id="send-btn" name="send" type="submit">↑</button>
+                <button id="send-btn" name="send" type="submit">➤</button>
               </div>
             </form>
           </td>
