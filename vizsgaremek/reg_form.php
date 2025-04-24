@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12 mx-auto">
-                    <form action="reg_ir.php" method="post" class="custom-form" role="form" target="kisablak">
+                    <form action="reg_ir.php" method="post" class="custom-form" role="form">
                         <h2 class="hero-title text-center mb-4 pb-2">Create an account</h2>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12">
